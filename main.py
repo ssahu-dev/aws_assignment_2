@@ -10,7 +10,7 @@ app = FastAPI()
 @app.get("/")
 def read_root():
     return {
-        "message": "Hello from ECS Fargate!",
+        "message": "Hello from ECS Fargate. Checking the deployment",
         "host": socket.gethostname()
     }
 
