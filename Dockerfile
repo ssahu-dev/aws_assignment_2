@@ -1,4 +1,5 @@
-FROM python:3.12-slim
+# Base image from ECR Public avoids Docker Hub rate limits inside CodeBuild
+FROM public.ecr.aws/docker/library/python:3.12-slim
 
 WORKDIR /app
 
